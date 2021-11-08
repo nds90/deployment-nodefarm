@@ -1,0 +1,22 @@
+apiVersion: apps/v1 #for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: deployment-nodefarm
+spec:
+  selector:
+    matchLabels:
+      app: nodefarm-js
+  replicas: 3 # tells deployment to run 3 pods matching the template
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: nodefarm-pod
+    spec:
+      containers:
+      - name: nodefarm-cont
+        image: nds90/nds90/nodefarm-image:f15233fe2f449c89c58462acb85d4a853d64f01f
