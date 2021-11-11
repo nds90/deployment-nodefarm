@@ -5,7 +5,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: nodefarm-js
+    app: frontend-nodefarm
   ports:
   - port: 3110
     protocol: TCP
