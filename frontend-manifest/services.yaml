@@ -8,5 +8,6 @@ spec:
     app: nodefarm-js
   ports:
   - port: 3110
+    protocol: TCP
     targetPort: 8000
     nodePort: 31230
