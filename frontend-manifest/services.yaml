@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nodefarm-svc
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: frontend-nodefarm
   ports:
