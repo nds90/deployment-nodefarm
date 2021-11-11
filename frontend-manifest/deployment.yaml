@@ -1,4 +1,4 @@
-apiVersion: apps/v1 #for versions before 1.9.0 use apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deployment-nodefarm
@@ -7,11 +7,6 @@ spec:
     metadata:
       labels:
         app: nodefarm-pod
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
     spec:
       containers:
       - name: nodefarm-cont
