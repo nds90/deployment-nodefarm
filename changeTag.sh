@@ -1,0 +1,1 @@
+sed "s/tagVersion/$1/g" deployment-temp.yaml > ./frontend-manifest/deployment.yaml
