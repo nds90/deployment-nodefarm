@@ -22,6 +22,5 @@ spec:
         image: nds90/nodefarm-image:f15233fe2f449c89c58462acb85d4a853d64f01f
         imagePullPolicy: Always
         ports:
-        - name:  nodefarm-port
-          port:  8000
+        - containerPort:  8000
           protocol: TCP
