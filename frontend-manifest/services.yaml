@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nodefarm-svc
   labels:
-    app: nodefarm-svc
+    app: frontend-nodefarm
 spec:
   selector:
     app: nodefarm-js

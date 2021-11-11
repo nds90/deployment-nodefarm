@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: deployment-nodefarm
   labels:
-    app: deployment-nodefarm
+    app: frontend-nodefarm
 spec:
   template:
     metadata:
       labels:
-        app: nodefarm-pod
+        app: frontend-nodefarm
     spec:
       containers:
       - name: nodefarm-cont
@@ -20,4 +20,4 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nodefarm-js
+      app: frontend-nodefarm
