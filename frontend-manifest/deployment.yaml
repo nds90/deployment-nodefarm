@@ -19,4 +19,4 @@ spec:
     spec:
       containers:
       - name: nodefarm-cont
-        image: nds90/nds90/nodefarm-image:f15233fe2f449c89c58462acb85d4a853d64f01f
+        image: nds90/nodefarm-image:f15233fe2f449c89c58462acb85d4a853d64f01f
