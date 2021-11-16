@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: nodefarm-cont
-        image: nds90/nodefarm-image:0a9033812f15069dd31319c2dc773a594fc91ef0
+        image: nds90/nodefarm-image:74da4833d74b90e2633272d82da37512b66c9e6c
         imagePullPolicy: Always
         ports:
         - containerPort:  8000
